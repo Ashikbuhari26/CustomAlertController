@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Alert Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AlertOk" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="AlertController" customModule="customAlertController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xmw-Zl-9R2">
+                                <rect key="frame" x="50" y="297" width="290" height="250"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="1Rx-VC-DbO">
+                                        <rect key="frame" x="27" y="196" width="236" height="32"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ya4-9c-hWx">
+                                                <rect key="frame" x="0.0" y="0.0" width="236" height="32"/>
+                                                <color key="backgroundColor" red="0.44705885649999999" green="0.80000001190000003" blue="0.56862747670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="15"/>
+                                                <state key="normal" title="Ok">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="OkButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xNq-qf-v6U"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="dWR-Ca-eSL"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kml-BH-893">
+                                        <rect key="frame" x="41" y="56" width="208" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="7m3-gO-WNf"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Success">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.44705885649999999" green="0.80000001190000003" blue="0.56862747670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="24" name="Futura-Medium"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <color key="highlightedColor" red="0.44705885649999999" green="0.80000001190000003" blue="0.56862747670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3X-iU-h9w">
+                                        <rect key="frame" x="50" y="102" width="190" height="61"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="61" id="Nh7-bP-gzs"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Enter A Valid Phone Number">
+                                                <attributes>
+                                                    <font key="NSFont" size="14" name="Futura-Medium"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tick" translatesAutoresizingMaskIntoConstraints="NO" id="hL6-Pa-wpY">
+                                        <rect key="frame" x="115" y="-34" width="60" height="60"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="ETR-RB-rQj"/>
+                                            <constraint firstAttribute="height" constant="60" id="TvQ-dV-NcS"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="kml-BH-893" firstAttribute="top" secondItem="hL6-Pa-wpY" secondAttribute="bottom" constant="32" id="1hK-yU-Tmh"/>
+                                    <constraint firstItem="1Rx-VC-DbO" firstAttribute="top" secondItem="i3X-iU-h9w" secondAttribute="bottom" constant="33" id="I6R-nS-xtX"/>
+                                    <constraint firstAttribute="height" constant="250" id="LmG-YG-4ve"/>
+                                    <constraint firstItem="i3X-iU-h9w" firstAttribute="top" secondItem="kml-BH-893" secondAttribute="bottom" constant="8" id="OVZ-Gs-vNL"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Rx-VC-DbO" secondAttribute="trailing" constant="27" id="ZY9-X8-56o"/>
+                                    <constraint firstAttribute="trailing" secondItem="kml-BH-893" secondAttribute="trailing" constant="41" id="ZwT-SA-3Hr"/>
+                                    <constraint firstItem="kml-BH-893" firstAttribute="leading" secondItem="xmw-Zl-9R2" secondAttribute="leading" constant="41" id="bGW-M0-VdX"/>
+                                    <constraint firstItem="1Rx-VC-DbO" firstAttribute="leading" secondItem="xmw-Zl-9R2" secondAttribute="leading" constant="27" id="qKG-lN-61Q"/>
+                                    <constraint firstItem="hL6-Pa-wpY" firstAttribute="leading" secondItem="xmw-Zl-9R2" secondAttribute="leading" constant="120" id="sxa-p6-fRx"/>
+                                    <constraint firstAttribute="trailing" secondItem="i3X-iU-h9w" secondAttribute="trailing" constant="50" id="w7L-jr-BQl"/>
+                                    <constraint firstItem="i3X-iU-h9w" firstAttribute="leading" secondItem="xmw-Zl-9R2" secondAttribute="leading" constant="50" id="wWx-sn-Kx5"/>
+                                    <constraint firstAttribute="bottom" secondItem="1Rx-VC-DbO" secondAttribute="bottom" constant="22" id="ygc-IA-9P6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xmw-Zl-9R2" secondAttribute="trailing" constant="50" id="0kz-wo-1JC"/>
+                            <constraint firstItem="xmw-Zl-9R2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="DdG-dm-O81"/>
+                            <constraint firstItem="xmw-Zl-9R2" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ND0-21-ZbK"/>
+                            <constraint firstItem="xmw-Zl-9R2" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="lXw-RD-0Of"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="OkButton" destination="ya4-9c-hWx" id="OeU-nQ-Nz1"/>
+                        <outlet property="alertView" destination="xmw-Zl-9R2" id="g39-7e-VZP"/>
+                        <outlet property="imageView" destination="hL6-Pa-wpY" id="2bR-oI-fzL"/>
+                        <outlet property="subtitleLabel" destination="i3X-iU-h9w" id="jGy-yo-vg4"/>
+                        <outlet property="titlelabel" destination="kml-BH-893" id="TgJ-59-Imh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tick" width="512" height="512"/>
+    </resources>
+</document>

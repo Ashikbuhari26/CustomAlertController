@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Offline View Controller-->
+        <scene sceneID="N2F-xC-8Dl">
+            <objects>
+                <viewController storyboardIdentifier="OfflineViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dPy-kc-8Hl" customClass="OfflineViewController" customModule="customAlertController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3oU-6T-8NH">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pyg-bE-K5K">
+                                <rect key="frame" x="50" y="297" width="290" height="250"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="tick" translatesAutoresizingMaskIntoConstraints="NO" id="dlD-KD-Uuz">
+                                        <rect key="frame" x="114" y="-36" width="80" height="80"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="DFH-Nb-bXE"/>
+                                            <constraint firstAttribute="height" constant="60" id="m8T-n5-7s1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This App Requires Wifi/Internet Connection!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4C-WK-h61">
+                                        <rect key="frame" x="22" y="153" width="246" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="gFR-hu-LsE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OOPS!!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wRs-u2-Ebv">
+                                        <rect key="frame" x="112" y="127" width="65" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="Kjw-Xo-PoZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wifi.slash" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Lde-Pa-4tA">
+                                        <rect key="frame" x="65" y="33.333333333333314" width="160" height="80.666666666666657"/>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="83" id="a2V-4k-8Ia"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ZS-CL-YPX">
+                                        <rect key="frame" x="80" y="213" width="130" height="29"/>
+                                        <color key="backgroundColor" red="0.38431372549999998" green="0.76862745099999996" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="gAX-nv-4FP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="0.0"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Try Again!"/>
+                                        <connections>
+                                            <action selector="tryAgainSender:" destination="dPy-kc-8Hl" eventType="touchUpInside" id="crC-L1-xrm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="5ZS-CL-YPX" secondAttribute="bottom" constant="8" id="0Mc-0a-osT"/>
+                                    <constraint firstItem="wRs-u2-Ebv" firstAttribute="top" secondItem="Lde-Pa-4tA" secondAttribute="bottom" constant="11" id="BsJ-RM-7nJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="wRs-u2-Ebv" secondAttribute="trailing" constant="113" id="EFa-we-4bP"/>
+                                    <constraint firstItem="5ZS-CL-YPX" firstAttribute="top" secondItem="wRs-u2-Ebv" secondAttribute="bottom" constant="58" id="EGg-Ux-51W"/>
+                                    <constraint firstItem="5ZS-CL-YPX" firstAttribute="leading" secondItem="pyg-bE-K5K" secondAttribute="leading" constant="80" id="J3Y-Vb-xt6"/>
+                                    <constraint firstItem="s4C-WK-h61" firstAttribute="leading" secondItem="pyg-bE-K5K" secondAttribute="leading" constant="22" id="LiC-8N-qxz"/>
+                                    <constraint firstItem="5ZS-CL-YPX" firstAttribute="top" secondItem="s4C-WK-h61" secondAttribute="bottom" constant="11" id="Oab-JI-p6g"/>
+                                    <constraint firstItem="wRs-u2-Ebv" firstAttribute="leading" secondItem="pyg-bE-K5K" secondAttribute="leading" constant="112" id="PDT-36-sLQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="5ZS-CL-YPX" secondAttribute="trailing" constant="80" id="TYt-Hc-Gih"/>
+                                    <constraint firstItem="Lde-Pa-4tA" firstAttribute="top" secondItem="dlD-KD-Uuz" secondAttribute="bottom" constant="9" id="WwV-od-1Xj"/>
+                                    <constraint firstItem="Lde-Pa-4tA" firstAttribute="leading" secondItem="pyg-bE-K5K" secondAttribute="leading" constant="65" id="cm5-Eg-IMw"/>
+                                    <constraint firstAttribute="trailing" secondItem="s4C-WK-h61" secondAttribute="trailing" constant="22" id="gd3-9W-8FM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lde-Pa-4tA" secondAttribute="trailing" constant="65" id="hGH-s5-HrK"/>
+                                    <constraint firstItem="dlD-KD-Uuz" firstAttribute="leading" secondItem="pyg-bE-K5K" secondAttribute="leading" constant="114" id="o6G-50-I03"/>
+                                    <constraint firstItem="5ZS-CL-YPX" firstAttribute="centerX" secondItem="pyg-bE-K5K" secondAttribute="centerX" id="rfd-21-nN0"/>
+                                    <constraint firstAttribute="height" constant="250" id="v1s-Ch-seL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Zhc-ze-HzS"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pyg-bE-K5K" firstAttribute="centerY" secondItem="3oU-6T-8NH" secondAttribute="centerY" id="0jc-1n-elE"/>
+                            <constraint firstItem="pyg-bE-K5K" firstAttribute="centerX" secondItem="3oU-6T-8NH" secondAttribute="centerX" id="hdp-dL-MYw"/>
+                            <constraint firstItem="Zhc-ze-HzS" firstAttribute="trailing" secondItem="pyg-bE-K5K" secondAttribute="trailing" constant="50" id="qYM-B5-Az6"/>
+                            <constraint firstItem="pyg-bE-K5K" firstAttribute="leading" secondItem="Zhc-ze-HzS" secondAttribute="leading" constant="50" id="zkw-76-Hug"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="OfflineView" destination="pyg-bE-K5K" id="aJZ-kQ-Mlq"/>
+                        <outlet property="OfflineVrihodhaIcon" destination="dlD-KD-Uuz" id="6hL-eC-ShO"/>
+                        <outlet property="offlineView" destination="pyg-bE-K5K" id="6aH-VQ-fd0"/>
+                        <outlet property="tryAgainButton" destination="5ZS-CL-YPX" id="YJI-1H-Zab"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nyk-ep-Fl1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.846153846153847" y="74.644549763033169"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tick" width="512" height="512"/>
+        <image name="wifi.slash" catalog="system" width="128" height="102"/>
+    </resources>
+</document>
